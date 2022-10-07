@@ -39,7 +39,7 @@ qouteButton.addEventListener("click", getJoke)
     let jokeHistory = document.querySelector("#joke-history");
     let logJoke = document.createElement("li"); 
     logJoke.textContent = h1.textContent;
-    jokeHistory.appendChild(logJoke);
+    goodJokes.appendChild(logJoke);
 }
 
 let likeButton = document.querySelector(".thumbsup")
@@ -52,7 +52,7 @@ function badlogJoke() {
     let badJokeHistory = document.querySelector("#bad-joke-history");
     let logBadJoke = document.createElement("li"); 
     logBadJoke.textContent = h1.textContent;
-    badJokeHistory.appendChild(logBadJoke);
+    badJokes.appendChild(logBadJoke);
 }
 
 let title = document.querySelector('#page-title');
