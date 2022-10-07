@@ -53,3 +53,17 @@ body {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+  .container{
+    display: flex;
+  }
+
+  .joke-history{
+    list-style-position: inside;
+    list-style-type: square;
+  }
+
+  .bad-joke-history{
+    list-style-position: inside;
+    list-style-type: square;
+  }
