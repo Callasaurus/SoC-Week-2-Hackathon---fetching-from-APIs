@@ -33,6 +33,35 @@ body {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
+  #user-button{
+    display: inline-block;
+        margin: 2.5px; /* space between buttons */
+        background: #87e6ed; /* background color */
+        color: #333; /* text color */
+        font-size: 1em;
+        font-family: "Monaco", monospace;
+        font-style: italic;
+        border-radius: 25px; /* rounded corners */
+        padding: 4px 8px; /* space around text */
+        -moz-transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+
+  }
+    #stop-button{
+        display: inline-block;
+        margin: 5px; /* space between buttons */
+        background: #87e6ed; /* background color */
+        color: #333; /* text color */
+        font-size: 1.5em;
+        font-family: "Monaco", monospace;
+        font-style: italic;
+        border-radius: 50px; /* rounded corners */
+        padding: 8px 16px; /* space around text */
+        -moz-transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+  }
   #new-joke-button{
     display: inline-block;
     margin: 5px; /* space between buttons */

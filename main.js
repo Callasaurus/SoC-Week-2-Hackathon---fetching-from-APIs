@@ -10,6 +10,7 @@ async function getJoke(){
 
 let startButton = document.querySelector("#start-button")
 startButton.addEventListener("click", autoJoke)
+let intervalId = ""
 
 async function autoJoke(event){
     let response = await fetch("https://icanhazdadjoke.com/", {
@@ -18,14 +19,17 @@ async function autoJoke(event){
     let data = await response.json();
     h1.textContent = data.joke;
     startButton = event.target;
-    let intervalId = setInterval(autoJoke, 3000);
+    intervalId = setInterval(autoJoke, 3000);
 }
 
+
+let stopButton = document.querySelector("#stop-button")
+stopButton.addEventListener("click",stopCounter)
 // startButton.addEventListener("click", clearInterval(intervalId));
 
-// function stopCounter() {
-//   clearInterval(intervald);
-// }
+function stopCounter() {
+  clearInterval(intervalId);
+}
 
 let qouteButton = document.querySelector("#new-joke-button")
 
