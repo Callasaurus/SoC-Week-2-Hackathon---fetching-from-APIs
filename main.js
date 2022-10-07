@@ -34,7 +34,6 @@ function badlogJoke() {
 }
 
 
-
 // PLAN - Create a website similar to the dad jokes website and have it come up with random jokes ✅
 // When we click a button a new joke pops up ✅
 // First Step - Look back at the kanye workshop ✅
@@ -42,7 +41,7 @@ function badlogJoke() {
 // Title, Image of a Dad, H1 element to print the joke,button to get joke ✅
 // ul element to list the previous jokes under ✅
 
-//Next plan - only have the previous jokes save if the user likes them
+// Next plan - only have the previous jokes save if the user likes them
 // prompt the user and ask if they like the joke - if yes, have function logJoke activated
-//else do not print joke. 
+// else do not print joke. 
 
