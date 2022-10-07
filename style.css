@@ -5,4 +5,35 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+  img{
+    height: px;
+
+  }
+  .thumbsup{
+    display: inline-block;
+    margin: 5px; /* space between buttons */
+    background: #87e6ed; /* background color */
+    color: #333; /* text color */
+    font-size: 1.5em;
+    font-family: ‘Georgia’, serif;
+    font-style: italic;
+    border-radius: 50px; /* rounded corners */
+    padding: 8px 16px; /* space around text */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .thumbsdown{
+    display: inline-block;
+    margin: 5px; /* space between buttons */
+    background: #87e6ed; /* background color */
+    color: #333; /* text color */
+    font-size: 1.5em;
+    font-family: ‘Georgia’, serif;
+    font-style: italic;
+    border-radius: 50px; /* rounded corners */
+    padding: 8px 16px; /* space around text */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }

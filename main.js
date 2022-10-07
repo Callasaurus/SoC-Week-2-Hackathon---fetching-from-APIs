@@ -9,10 +9,9 @@ async function getJoke(){
 }
 getJoke();
 
-let qouteButton = document.querySelector("#new-quote-button")
+let qouteButton = document.querySelector("#new-joke-button")
 
 qouteButton.addEventListener("click", getJoke)
-qouteButton.addEventListener("click", logJoke)
  
  function logJoke() {
     let jokeHistory = document.querySelector("#joke-history");
@@ -21,13 +20,29 @@ qouteButton.addEventListener("click", logJoke)
     jokeHistory.appendChild(logJoke);
 }
 
-// PLAN - Create a website similar to the dad jokes website and have it come up with random jokes
-// When we click a button a new joke pops up 
-// First Step - Look back at the kanye workshop
-// Build the physical website (not yet clickable)
-// Title, Image of a Dad, H1 element to print the joke,button to get joke
-// ul element to list the previous jokes under
+let likeButton = document.querySelector(".thumbsup")
+likeButton.addEventListener("click", logJoke)
 
-// Find image of machine / van & manipulate it with CSS animations
-// When we click the button it will shake 
-// Shoot out the dad joke 
+let dislikeButton = document.querySelector(".thumbsdown")
+dislikeButton.addEventListener("click", badlogJoke)
+
+function badlogJoke() {
+    let badJokeHistory = document.querySelector("#bad-joke-history");
+    let logBadJoke = document.createElement("li"); 
+    logBadJoke.textContent = h1.textContent;
+    badJokeHistory.appendChild(logBadJoke);
+}
+
+
+
+// PLAN - Create a website similar to the dad jokes website and have it come up with random jokes ✅
+// When we click a button a new joke pops up ✅
+// First Step - Look back at the kanye workshop ✅
+// Build the physical website (not yet clickable) ✅
+// Title, Image of a Dad, H1 element to print the joke,button to get joke ✅
+// ul element to list the previous jokes under ✅
+
+//Next plan - only have the previous jokes save if the user likes them
+// prompt the user and ask if they like the joke - if yes, have function logJoke activated
+//else do not print joke. 
+
