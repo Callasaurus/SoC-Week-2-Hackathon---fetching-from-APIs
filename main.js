@@ -7,7 +7,23 @@ async function getJoke(){
     let data = await response.json();
     h1.textContent = data.joke 
 }
-getJoke();
+
+
+let startButton = document.querySelector("#start-button")
+startButton.addEventListener("click",autoJoke)
+
+async function autoJoke(){
+    let response = await fetch("https://icanhazdadjoke.com/", {
+        headers: { accept: "application/json" },
+      });
+    let data = await response.json();
+    h1.textContent = data.joke 
+    let intervalId = setInterval(autoJoke, 3000);
+}
+
+
+
+ 
 
 let qouteButton = document.querySelector("#new-joke-button")
 
@@ -49,3 +65,5 @@ title.style.color = "#008b8b";
 // prompt the user and ask if they like the joke - if yes, have function logJoke activated
 // else do not print joke. 
 
+//Continuous Jokes Plan 
+//First 

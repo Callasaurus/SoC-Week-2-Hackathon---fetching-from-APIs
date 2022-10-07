@@ -5,19 +5,55 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+#page-title{
+    color: #5fb2b8; /* text color */
+    font-size: 5em;
+    font-family: "Monaco", monospace;
+    -webkit-text-stroke: 4px #315C72;
+    -webkit-text-fill-color: #315C72;
+}
+#dad-joke{
+    color: #315C72;
+}
   img {
     height: px;
     animation: shake 2s linear 0s infinite;
   }
-
+  #start-button{
+    display: inline-block;
+    margin: 5px; /* space between buttons */
+    background: #87e6ed; /* background color */
+    color: #333; /* text color */
+    font-size: 1.5em;
+    font-family: "Monaco", monospace;
+    font-style: italic;
+    border-radius: 50px; /* rounded corners */
+    padding: 8px 16px; /* space around text */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  #new-joke-button{
+    display: inline-block;
+    margin: 5px; /* space between buttons */
+    background: #87e6ed; /* background color */
+    color: #333; /* text color */
+    font-size: 1.5em;
+    font-family: "Monaco", monospace;
+    font-style: italic;
+    border-radius: 50px; /* rounded corners */
+    padding: 8px 16px; /* space around text */
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
   .thumbsup{
     display: inline-block;
     margin: 5px; /* space between buttons */
     background: #87e6ed; /* background color */
     color: #333; /* text color */
     font-size: 1.5em;
-    font-family: ‘Georgia’, serif;
+    font-family: "Monaco", monospace;
     font-style: italic;
     border-radius: 50px; /* rounded corners */
     padding: 8px 16px; /* space around text */
@@ -31,7 +67,7 @@ body {
     background: #87e6ed; /* background color */
     color: #333; /* text color */
     font-size: 1.5em;
-    font-family: ‘Georgia’, serif;
+    font-family: "Monaco", monospace;
     font-style: italic;
     border-radius: 50px; /* rounded corners */
     padding: 8px 16px; /* space around text */
