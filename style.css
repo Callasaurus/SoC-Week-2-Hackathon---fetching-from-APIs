@@ -1,5 +1,5 @@
 body {
-    font-family: "Oswald", sans-serif;
+    font-family: "Monaco", monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +58,10 @@ body {
     display: flex;
   }
 
+  .column{
+    flex: 50%;
+  }
+  
   .joke-history{
     list-style-position: inside;
     list-style-type: square;
@@ -66,4 +70,9 @@ body {
   .bad-joke-history{
     list-style-position: inside;
     list-style-type: square;
+  }
+
+  #page-title.thick {
+    font-weight: bold;
+    text-decoration-color: #008b8b;
   }

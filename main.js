@@ -33,6 +33,10 @@ function badlogJoke() {
     badJokeHistory.appendChild(logBadJoke);
 }
 
+let title = document.querySelector('#page-title');
+title.style.textDecoration = "underline";
+title.style.color = "#008b8b";
+
 
 // PLAN - Create a website similar to the dad jokes website and have it come up with random jokes ✅
 // When we click a button a new joke pops up ✅
