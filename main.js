@@ -60,6 +60,18 @@ title.style.textDecoration = "underline";
 title.style.color = "#008b8b";
 
 
+let goodJokes = document.querySelector("#great-jokes")
+let badJokes = document.querySelector("#bad-jokes")
+
+let userName = document.querySelector("#user-input")
+userName.addEventListener("change", getName)
+
+function getName(event) {
+  let userName = event.target.value;
+  goodJokes.textContent = `${userName} thinks these jokes are great!`;
+  badJokes.textContent = `${userName} thinks these jokes suck!`;
+}
+
 // PLAN - Create a website similar to the dad jokes website and have it come up with random jokes ✅
 // When we click a button a new joke pops up ✅
 // First Step - Look back at the kanye workshop ✅

@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
   }
+
 #page-title{
     color: #5fb2b8; /* text color */
     font-size: 5em;
@@ -140,4 +141,16 @@ body {
   #page-title.thick {
     font-weight: bold;
     text-decoration-color: #008b8b;
+  }
+
+  #great-jokes {
+    font-size: 1.5em
+  }
+  
+  #bad-jokes {
+    font-size: 1.5em
+  }
+
+  #user-prompt {
+    font-size: 1.25em
   }
