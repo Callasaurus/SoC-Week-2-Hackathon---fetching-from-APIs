@@ -25,7 +25,6 @@ async function autoJoke(event){
 
 let stopButton = document.querySelector("#stop-button")
 stopButton.addEventListener("click",stopCounter)
-// startButton.addEventListener("click", clearInterval(intervalId));
 
 function stopCounter() {
   clearInterval(intervalId);
@@ -72,16 +71,3 @@ function getName(event) {
   badJokes.textContent = `${userName} thinks these jokes suck!`;
 }
 
-// PLAN - Create a website similar to the dad jokes website and have it come up with random jokes ✅
-// When we click a button a new joke pops up ✅
-// First Step - Look back at the kanye workshop ✅
-// Build the physical website (not yet clickable) ✅
-// Title, Image of a Dad, H1 element to print the joke,button to get joke ✅
-// ul element to list the previous jokes under ✅
-
-// Next plan - only have the previous jokes save if the user likes them
-// prompt the user and ask if they like the joke - if yes, have function logJoke activated
-// else do not print joke. 
-
-//Continuous Jokes Plan 
-//First 
